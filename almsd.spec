@@ -2,7 +2,7 @@ Summary:	A.L.E.C lms daemon
 Summary(pl):	Demon A.L.E.C lms
 Name:		almsd
 Version:	20040309
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://pbern.biz/almsd/snap/%{name}-%{version}.tar.bz2
