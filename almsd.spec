@@ -1,12 +1,12 @@
 Summary:	A.L.E.C lms daemon
 Summary(pl):	Demon A.L.E.C lms
 Name:		almsd
-Version:	20040123
+Version:	20040309
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://pbern.biz/almsd/snap/%{name}-%{version}.tar.bz2
-# Source0-md5:	db064e9956e25a6060dea033a72694a0
+# Source0-md5:	fdb66515e67ca258dba002ea0fb960b8
 BuildRequires:	libgadu-devel
 BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
