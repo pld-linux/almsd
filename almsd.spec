@@ -7,8 +7,8 @@ License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://pbern.biz/almsd/%{name}-%{version}.tar.bz2
 # Source0-md5:	97132fc33580a4a6da61ece3dc2e8cf9
+BuildRequires:	libgadu-devel
 BuildRequires:	mysql-devel
-Requires:	lms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -23,7 +23,7 @@ na podstawie bazy danych LMS`a oraz restartowania odpowiednich serwisow.
 
 %build
 ./configure \
-    --prefix=%{_bindir} \
+    --prefix=%{_bindir}  \
     --libdir=%{_libdir}
 
 %{__make}
@@ -31,7 +31,13 @@ na podstawie bazy danych LMS`a oraz restartowania odpowiednich serwisow.
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+       INSTALLDIR=$RPM_BUILD_ROOT%{_bindir} 
+
+install -d  $RPM_BUILD_ROOT%{_libdir}
+
+for i in ethers hostfile dhcp oident dns cutoff payments traffic notify tc ggnotify; do
+    install modules/$i/*.so $RPM_BUILD_ROOT%{_libdir}
+done
 
 %clean
 rm -rf $RPM_BUILD_ROOT
