@@ -2,7 +2,7 @@ Summary:	A.L.E.C lms daemon
 Summary(pl):	A.L.E.C lms daemon
 Name:		almsd
 Version:	20040117
-Release:	0.2
+Release:	0.3
 License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://pbern.biz/almsd/snap/%{name}-%{version}.tar.bz2
@@ -154,7 +154,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO
+%doc README TODO lms.ini.sample
 %attr(755,root,root) %{_bindir}/*
 
 %files ethers
