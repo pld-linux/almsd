@@ -1,5 +1,5 @@
 Summary:	A.L.E.C lms daemon
-Summary(pl):	A.L.E.C lms daemon
+Summary(pl):	Demon A.L.E.C lms
 Name:		almsd
 Version:	20040117
 Release:	0.3
@@ -12,141 +12,165 @@ BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-none
+Utility for creating of several services configuration files basing on
+LMS database and restarting appropriate services.
 
 %description -l pl
-Program s³u¿y do tworzenia plikow konfiguracyjnych ró¿nych us³ug 
-na podstawie bazy danych LMS`a oraz restartowania odpowiednich serwisow.
+Program s³u¿y do tworzenia plikow konfiguracyjnych ró¿nych us³ug na
+podstawie bazy danych LMS-a oraz restartowania odpowiednich us³ug.
 
 %package ethers
-Summary:        A.L.E.C lms daemon module ethers
-Summary(pl):    A.L.E.C lms daemon modu³ ethers
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - ethers module
+Summary(pl):	Demon A.L.E.C lms daemon - modu³ ethers
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description ethers
-none
+ethers module for A.L.E.C lms daemon.
+
 %description ethers -l pl
-brak 
+Modu³ ethers dla demona A.L.E.C lms.
 
 %package hostfile
-Summary:        A.L.E.C lms daemon module hostfile
-Summary(pl):    A.L.E.C lms daemon modu³ hostfile
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - hostfile module
+Summary(pl):	Demon A.L.E.C lms - modu³ hostfile
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description hostfile 
-none
+hostfile module for A.L.E.C lms daemon.
+
 %description hostfile -l pl
-brak 
+Modu³ hostfile dla demona A.L.E.C lms.
 
 %package dhcp
-Summary:        A.L.E.C lms daemon module dhcp
-Summary(pl):    A.L.E.C lms daemon modu³ dhcp
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - dhcp module
+Summary(pl):	Demon A.L.E.C lms - modu³ dhcp
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description dhcp
-none
+dhcp module for A.L.E.C lms daemon.
+
 %description dhcp -l pl
-brak 
+Modu³ dhcp dla demona A.L.E.C lms.
 
 %package oident
-Summary:        A.L.E.C lms daemon module oident
-Summary(pl):    A.L.E.C lms daemon modu³ oident
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - oident module
+Summary(pl):	Demon A.L.E.C lms - modu³ oident
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description oident
-none
+oident module for A.L.E.C lms daemon.
+
 %description oident -l pl
-brak 
+Modu³ oident dla demona A.L.E.C lms.
 
 %package dns
-Summary:        A.L.E.C lms daemon module dns
-Summary(pl):    A.L.E.C lms daemon modu³ dns
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - dns module
+Summary(pl):	Demon A.L.E.C lms - modu³ dns
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description dns
-none
+dns module for A.L.E.C lms daemon.
+
 %description dns -l pl
-brak 
+Modu³ dns dla demona A.L.E.C lms.
 
 %package cutoff
-Summary:        A.L.E.C lms daemon module cutoff
-Summary(pl):    A.L.E.C lms daemon modu³ cutoff
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - cutoff module
+Summary(pl):	Demon A.L.E.C lms - modu³ cutoff
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description cutoff
-none
+cutoff module for A.L.E.C lms daemon.
+
 %description cutoff -l pl
-brak 
+Modu³ cutoff dla demona A.L.E.C lms.
 
 %package payments
-Summary:        A.L.E.C lms daemon module payments
-Summary(pl):    A.L.E.C lms daemon modu³ payments
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - payments module
+Summary(pl):	Demon A.L.E.C lms - modu³ payments
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description payments
-none
+payments module for A.L.E.C lms daemon.
+
 %description payments -l pl
-brak 
+Modu³ p³atno¶ci (payments) dla demona A.L.E.C lms.
 
 %package traffic
-Summary:        A.L.E.C lms daemon module traffic
-Summary(pl):    A.L.E.C lms daemon modu³ traffic
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - traffic module
+Summary(pl):	Demon A.L.E.C lms - modu³ traffic
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description traffic
-none
+traffic module for A.L.E.C lms daemon.
+
 %description traffic -l pl
-brak 
+Modu³ traffic dla demona A.L.E.C lms.
 
 %package notify
-Summary:        A.L.E.C lms daemon module notify
-Summary(pl):    A.L.E.C lms daemon modu³ notify
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - notify module
+Summary(pl):	Demon A.L.E.C lms - modu³ notify
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description notify
-none
+notify module for A.L.E.C lms daemon.
+
 %description notify -l pl
-brak 
+Modu³ powiadamiania (notify) dla demona A.L.E.C lms.
 
 %package tc
-Summary:        A.L.E.C lms daemon module tc
-Summary(pl):    A.L.E.C lms daemon modu³ tc
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - tc module
+Summary(pl):	Demon A.L.E.C lms - modu³ tc
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description tc
-none
+tc module for A.L.E.C lms daemon.
+
 %description tc -l pl
-brak 
+Modu³ tc dla demona A.L.E.C lms.
 
 %package ggnotify
-Summary:        A.L.E.C lms daemon module ggnotify
-Summary(pl):    A.L.E.C lms daemon modu³ ggnotify
-Group:          Networking/Utilities
+Summary:	A.L.E.C lms daemon - ggnotify module
+Summary(pl):	Demon A.L.E.C lms - modu³ ggnotify
+Group:		Networking/Utilities
 Requires:	%{name} = %{version}
+
 %description ggnotify
-none
+ggnotify module for A.L.E.C lms daemon.
+
 %description ggnotify -l pl
-brak 
+Modu³ ggnotify dla demona A.L.E.C lms.
 
 %prep
 %setup -q
 
 %build
 ./configure \
-    --prefix=%{_bindir}  \
-    --libdir=%{_libdir}
+	--prefix=%{_bindir} \
+	--libdir=%{_libdir}
 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install \
-       INSTALLDIR=$RPM_BUILD_ROOT%{_bindir} 
 
-install -d  $RPM_BUILD_ROOT%{_libdir}
+%{__make} install \
+	INSTALLDIR=$RPM_BUILD_ROOT%{_bindir} 
+
+install -d $RPM_BUILD_ROOT%{_libdir}
 
 for i in ethers hostfile dhcp oident dns cutoff payments traffic notify tc ggnotify; do
-    install modules/$i/*.so $RPM_BUILD_ROOT%{_libdir}
+	install modules/$i/*.so $RPM_BUILD_ROOT%{_libdir}
 done
 
 %clean
@@ -158,34 +182,45 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 
 %files ethers
-%attr(644,root,root) %{_libdir}/ethers.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/ethers.so
 
 %files hostfile
-%attr(644,root,root) %{_libdir}/hostfile.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/hostfile.so
 
 %files dhcp
-%attr(644,root,root) %{_libdir}/dhcp.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/dhcp.so
 
 %files oident
-%attr(644,root,root) %{_libdir}/oident.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/oident.so
 
 %files dns
-%attr(644,root,root) %{_libdir}/dns.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/dns.so
 
 %files cutoff
-%attr(644,root,root) %{_libdir}/cutoff.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/cutoff.so
 
 %files payments
-%attr(644,root,root) %{_libdir}/payments.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/payments.so
 
 %files traffic
-%attr(644,root,root) %{_libdir}/traffic.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/traffic.so
 
 %files notify
-%attr(644,root,root) %{_libdir}/notify.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/notify.so
 
 %files tc
-%attr(644,root,root) %{_libdir}/tc.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/tc.so
 
 %files ggnotify
-%attr(644,root,root) %{_libdir}/ggnotify.so
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/ggnotify.so
