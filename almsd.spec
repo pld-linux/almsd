@@ -159,7 +159,8 @@ Modu³ ggnotify dla demona A.L.E.C lms.
 	--prefix=%{_bindir} \
 	--libdir=%{_libdir}
 
-%{__make}
+%{__make} \
+	CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
