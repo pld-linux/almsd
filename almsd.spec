@@ -16,7 +16,7 @@ Utility for creating of several services configuration files basing on
 LMS database and restarting appropriate services.
 
 %description -l pl
-Program s³u¿y do tworzenia plikow konfiguracyjnych ró¿nych us³ug na
+Program s³u¿y do tworzenia plików konfiguracyjnych ró¿nych us³ug na
 podstawie bazy danych LMS-a oraz restartowania odpowiednich us³ug.
 
 %package ethers
