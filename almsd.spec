@@ -158,34 +158,34 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 
 %files ethers
-%attr(755,root,root) %{_libdir}/ethers.so
+%attr(644,root,root) %{_libdir}/ethers.so
 
 %files hostfile
-%attr(755,root,root) %{_libdir}/hostfile.so
+%attr(644,root,root) %{_libdir}/hostfile.so
 
 %files dhcp
-%attr(755,root,root) %{_libdir}/dhcp.so
+%attr(644,root,root) %{_libdir}/dhcp.so
 
 %files oident
-%attr(755,root,root) %{_libdir}/oident.so
+%attr(644,root,root) %{_libdir}/oident.so
 
 %files dns
-%attr(755,root,root) %{_libdir}/dns.so
+%attr(644,root,root) %{_libdir}/dns.so
 
 %files cutoff
-%attr(755,root,root) %{_libdir}/cutoff.so
+%attr(644,root,root) %{_libdir}/cutoff.so
 
 %files payments
-%attr(755,root,root) %{_libdir}/payments.so
+%attr(644,root,root) %{_libdir}/payments.so
 
 %files traffic
-%attr(755,root,root) %{_libdir}/traffic.so
+%attr(644,root,root) %{_libdir}/traffic.so
 
 %files notify
-%attr(755,root,root) %{_libdir}/notify.so
+%attr(644,root,root) %{_libdir}/notify.so
 
 %files tc
-%attr(755,root,root) %{_libdir}/tc.so
+%attr(644,root,root) %{_libdir}/tc.so
 
 %files ggnotify
-%attr(755,root,root) %{_libdir}/ggnotify.so
+%attr(644,root,root) %{_libdir}/ggnotify.so
