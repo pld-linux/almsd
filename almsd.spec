@@ -5,7 +5,7 @@ Version:	20040117
 Release:	0.2
 License:	GPL
 Group:		Networking/Utilities
-Source0:	ftp://pbern.biz/almsd/%{name}-%{version}.tar.bz2
+Source0:	ftp://pbern.biz/almsd/snap/%{name}-%{version}.tar.bz2
 # Source0-md5:	97132fc33580a4a6da61ece3dc2e8cf9
 BuildRequires:	libgadu-devel
 BuildRequires:	mysql-devel
