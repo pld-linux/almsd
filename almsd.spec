@@ -23,7 +23,7 @@ podstawie bazy danych LMS-a oraz restartowania odpowiednich us³ug.
 Summary:	A.L.E.C lms daemon - ethers module
 Summary(pl):	Demon A.L.E.C lms daemon - modu³ ethers
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description ethers
 ethers module for A.L.E.C lms daemon.
@@ -35,7 +35,7 @@ Modu³ ethers dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - hostfile module
 Summary(pl):	Demon A.L.E.C lms - modu³ hostfile
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description hostfile 
 hostfile module for A.L.E.C lms daemon.
@@ -47,7 +47,7 @@ Modu³ hostfile dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - dhcp module
 Summary(pl):	Demon A.L.E.C lms - modu³ dhcp
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description dhcp
 dhcp module for A.L.E.C lms daemon.
@@ -59,7 +59,7 @@ Modu³ dhcp dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - oident module
 Summary(pl):	Demon A.L.E.C lms - modu³ oident
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description oident
 oident module for A.L.E.C lms daemon.
@@ -71,7 +71,7 @@ Modu³ oident dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - dns module
 Summary(pl):	Demon A.L.E.C lms - modu³ dns
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description dns
 dns module for A.L.E.C lms daemon.
@@ -83,7 +83,7 @@ Modu³ dns dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - cutoff module
 Summary(pl):	Demon A.L.E.C lms - modu³ cutoff
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description cutoff
 cutoff module for A.L.E.C lms daemon.
@@ -95,7 +95,7 @@ Modu³ cutoff dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - payments module
 Summary(pl):	Demon A.L.E.C lms - modu³ payments
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description payments
 payments module for A.L.E.C lms daemon.
@@ -107,7 +107,7 @@ Modu³ p³atno¶ci (payments) dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - traffic module
 Summary(pl):	Demon A.L.E.C lms - modu³ traffic
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description traffic
 traffic module for A.L.E.C lms daemon.
@@ -119,7 +119,7 @@ Modu³ traffic dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - notify module
 Summary(pl):	Demon A.L.E.C lms - modu³ notify
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description notify
 notify module for A.L.E.C lms daemon.
@@ -131,7 +131,7 @@ Modu³ powiadamiania (notify) dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - tc module
 Summary(pl):	Demon A.L.E.C lms - modu³ tc
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description tc
 tc module for A.L.E.C lms daemon.
@@ -143,7 +143,7 @@ Modu³ tc dla demona A.L.E.C lms.
 Summary:	A.L.E.C lms daemon - ggnotify module
 Summary(pl):	Demon A.L.E.C lms - modu³ ggnotify
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description ggnotify
 ggnotify module for A.L.E.C lms daemon.
@@ -164,11 +164,10 @@ Modu³ ggnotify dla demona A.L.E.C lms.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_libdir}
 
 %{__make} install \
 	INSTALLDIR=$RPM_BUILD_ROOT%{_bindir} 
-
-install -d $RPM_BUILD_ROOT%{_libdir}
 
 for i in ethers hostfile dhcp oident dns cutoff payments traffic notify tc ggnotify; do
 	install modules/$i/*.so $RPM_BUILD_ROOT%{_libdir}
