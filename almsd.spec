@@ -1,5 +1,5 @@
 Summary:	A.L.E.C lms daemon
-Summary(pl.UTF-8):   Demon A.L.E.C lms
+Summary(pl.UTF-8):	Demon A.L.E.C lms
 Name:		almsd
 Version:	20040309
 Release:	2
@@ -21,7 +21,7 @@ podstawie bazy danych LMS-a oraz restartowania odpowiednich usług.
 
 %package ethers
 Summary:	A.L.E.C lms daemon - ethers module
-Summary(pl.UTF-8):   Demon A.L.E.C lms daemon - moduł ethers
+Summary(pl.UTF-8):	Demon A.L.E.C lms daemon - moduł ethers
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -33,7 +33,7 @@ Moduł ethers dla demona A.L.E.C lms.
 
 %package hostfile
 Summary:	A.L.E.C lms daemon - hostfile module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł hostfile
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł hostfile
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -45,7 +45,7 @@ Moduł hostfile dla demona A.L.E.C lms.
 
 %package dhcp
 Summary:	A.L.E.C lms daemon - dhcp module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł dhcp
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł dhcp
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -57,7 +57,7 @@ Moduł dhcp dla demona A.L.E.C lms.
 
 %package oident
 Summary:	A.L.E.C lms daemon - oident module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł oident
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł oident
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -69,7 +69,7 @@ Moduł oident dla demona A.L.E.C lms.
 
 %package dns
 Summary:	A.L.E.C lms daemon - dns module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł dns
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł dns
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -81,7 +81,7 @@ Moduł dns dla demona A.L.E.C lms.
 
 %package cutoff
 Summary:	A.L.E.C lms daemon - cutoff module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł cutoff
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł cutoff
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -93,7 +93,7 @@ Moduł cutoff dla demona A.L.E.C lms.
 
 %package payments
 Summary:	A.L.E.C lms daemon - payments module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł payments
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł payments
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -105,7 +105,7 @@ Moduł płatności (payments) dla demona A.L.E.C lms.
 
 %package traffic
 Summary:	A.L.E.C lms daemon - traffic module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł traffic
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł traffic
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -117,7 +117,7 @@ Moduł traffic dla demona A.L.E.C lms.
 
 %package notify
 Summary:	A.L.E.C lms daemon - notify module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł notify
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł notify
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -129,7 +129,7 @@ Moduł powiadamiania (notify) dla demona A.L.E.C lms.
 
 %package tc
 Summary:	A.L.E.C lms daemon - tc module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł tc
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł tc
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
@@ -141,7 +141,7 @@ Moduł tc dla demona A.L.E.C lms.
 
 %package ggnotify
 Summary:	A.L.E.C lms daemon - ggnotify module
-Summary(pl.UTF-8):   Demon A.L.E.C lms - moduł ggnotify
+Summary(pl.UTF-8):	Demon A.L.E.C lms - moduł ggnotify
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 
